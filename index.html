@@ -1,170 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>application form</title>
-	<style type="text/css">
-		.{
-			margin: 0;
-			padding: 0;
-		}
-		body{
-      	background: linear-gradient(270deg,#EB455F,#FCFFE7);
-        height: 100vh;
-
-      	
-      	height: 100vh;
-      }
-      .border{
-      	width: 300px;
-      	height: 365px;
-      	margin: 60px auto 0;
-      	background: rgba(0, 0, 0, 0.6);
-      	text-align: center;
-      	padding: 35px;
-      	border: 3px solid #fff;
-      	border-radius: 70px 0 70px 0;
-      }
-      .b1{
-      	background-color: #4CAF50;
-      	border: none;
-      	color: white;
-      	padding: 10px 25px;
-      	text-align: center;
-      	text-decoration: none;
-      	display: inline-block;
-      	font-size: 16px;
-      }
-
-        .b2{
-      	background-color: #f44336;
-      	border: none;
-      	color: white;
-      	padding: 10px 25px;
-      	text-align: center;
-      	text-decoration: none;
-      	display: inline-block;
-      	font-size: 16px;
-      }
- 
-
-  </style>
-    <script type="text/javascript">
-    	
-    	function validate()
-		{
-			var fn=f1.fn.value;
-			var ln=f1.ln.value;
-			var gen=f1.g.value;
-			var age=f1.age.value;
-			var ph=f1.ph.value;
-			var email=f1.email.value;
-			var add=f1.add.value;
-			if(fn.length==0 || fn==" ")
-			{
-				alert("please enter first name");
-				return false;
-			}
-			else if(ln.length==0 || ln==" ")
-			{
-				alert("please enter last name");
-				return false;
-			}
-			else if(gen.length==0 || gen==" ")
-			{
-				alert("please select your gender");
-				return false;
-			}
-			else if(age.length==0 || age==" ")
-			{
-				alert("please enter the age");
-			}
-			else if(ph.length==0 || ph==" ")
-			{
-				alert("please enter the phone number");
-			}
-			else if(email.length==0 || email==" ")
-			{
-				alert("please enter the email id");
-			}
-			else if(add.length==0 || add==" ")
-			{
-				alert("please enter the address");
-			}
-		
-			else
-			{
-				return true;
-			}
-		}
-
-    </script>  
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-<div class="border">
-<center>
-	<font color="brown" size="5">
-		Application Form
-	</font>
-	<hr size="7" width="300" color="red">
-	</center>
-<form action="connect.php" method="POST" name="f1" onsubmit="return validate();">
-<table align="center">
-	<body color="red">
-	<tr>
-		<td bgcolor="white">first name :</td>
-		<td><input type="text" name="fn" size="20" maxlength="15" id="fn" required></td>
-	</tr>
-	<tr>
-		<td bgcolor="white">last name:</td>
-		<td><input type="text" name="ln" size="20" maxlength="15" id="ln" required></td>
-	</tr>
+  <div id="back">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-1-strong navbar-fixed-top">                              
 
-	<tr>
-		<td bgcolor="white">gender :</td>
-		<td bgcolor="white"><input type="radio" name="g" value="m" id="male" required>male
-			<input type="radio" name="g" value="f" id="female" required>female</td>
-	</tr>
+        <div class="container-fluid">    
+          <div class="navbar-header">  
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="b">
+              <span class="icon-bar" id="b1"></span>
+              <span class="icon-bar" id="b2"></span>
+              <span class="icon-bar" id="b3"></span>
+            </button> 
+            <a class="navbar-brand" href="D:/eth 2/portfolio/portfolio.html"><span class="s">S</span><span class="h">heik</span></a>         
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+          <ul id="sm" class="nav navbar-nav navbar-right">
+            <li><a id="s1" href="https://www.linkedin.com/in/umar-sheik-36a731233"><i class="fa fa-linkedin"></i></a></li>
+            <li><a id="s2" href="https://instagram.com/umar_sheik_us?igshid=ZDdkNTZiNTM="><i class="fa fa-instagram"></i></a></li>
+            <li><a id="s3" href="https://twitter.com/Umar_Sheik_US?t=H6o9YjhzSRm4t4R17UIcWQ&s=09"><i class="fa fa-twitter"></i></a></li>
 
-	<tr>
-		<td bgcolor="white">age :</td>
-		<td><input type="text" name="age" id="age" required></td>
-	</tr>
-	
-<tr>
-		<td bgcolor="white">phone number:</td>
-		<td><input type="text" name="ph" id="ph" required ></td>
-	</tr>
+          </ul>
+          <ul id="c" class="nav navbar-nav navbar-right">              
+            <li><a id="e1" href="D:/eth 2/portfolio/about.html"><i class="fa fa-user-circle"></i>  About</a></li>
+            <li><a id="e2" href="#"><i class="fa fa-cogs"></i>  Skills</a></li>
+            <li><a id="e3" href="#"><i class="fa fa-object-group"></i>  Projects</a></li>
+            <li><a id="e4" href="#"><i class=""></i>  Blog</a></li>
+        
+          </ul>
+          </div>
+          </div>
+          </nav>
+        
+        <div class="wrapper">
+          <div class="cols cols0">
+            <span class="topline">Hello</span>
+            <h1 id="cap">I'm <span class="multitext">Umar Sheik</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus error nemo ab corporis. Molestiae commodi expedita quos id minima! Odio, error. Dolorum id, quaerat eum aperiam et inventore ab?</p>
+          <div class="btns">
+            <button>Hire me</button>
+            <button>Download cv</button>
+          </div>
+          </div>
+          
+          <div class="img-area">
+            <img class="img" src="D:/eth 2/portfolio/img/photoph.jpg" >      
+        </div>
 
-	<tr>
-		<td bgcolor="white">Email:</td>
-		<td><input type="text" name="email" id="email" required></td>
-	</tr>
-
-	<tr>
-		<td bgcolor="white">address :</td>
-			<td><textarea name="address" cols="20" rows="6" id="address" required>
-			</textarea>
-		
-		</td>
-	</tr>
-	
-	
+        </div>
+      </div>
 
 
-	<td colspan="2" align="center">
-		<input type="submit" value="Submit" name="Submit">
-		<input type="reset" name="b2" value="clear" class="b2">
-		
-	</td>
-</tr>
-
-</table>
-
-</form>
-</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
 </body>
 </html>
