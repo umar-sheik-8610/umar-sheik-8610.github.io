@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 #back{
     width: auto;
     height: 100vh;
@@ -19,14 +20,19 @@
     background-color: black;
 }
 #h{
-
+    font-family: 'Bruno Ace', cursive; 
+    font-size: 50px;
 }
 #s{
-    
+    font-family: 'Bruno Ace', cursive; 
+    font-size: 30px;
+    margin-top: 10px;
+    color: rgb(28, 202, 255);
 }
 #c{
     padding-right: 10%;
 }
+    
 .navbar-nav > li{
     margin-left: 30px;
     margin-right: 30px;
