@@ -154,19 +154,19 @@ p{
     left: 120px;
 }
 button{
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 400;
-    color:#ffffff;   
-    background-color: aliceblue;
-    padding: 8px 14px;
-    margin: 40px 5px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
-
+  outline: none;
+  border: solid 2px rgb(28, 202, 255);
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: aliceblue;
+  padding: 8px 14px;
+  margin: 40px 5px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 10px 10px rgb(28, 202, 255);
 }
 button:hover{
     background-color: rgb(28, 202, 255);
